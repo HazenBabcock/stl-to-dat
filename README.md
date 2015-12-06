@@ -8,7 +8,7 @@ your favorite LDraw viewer or CAD program.
 Usage:
 
 ```
-python stlToDat.py input_file.stl output_file.dat
+> python stlToDat.py input_file.stl output_file.dat
 ```
 
 If the output file is not specified the input file name will be used with a .dat extension.
