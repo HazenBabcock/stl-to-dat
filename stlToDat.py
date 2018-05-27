@@ -10,7 +10,7 @@ import os
 import sys
 
 if (len(sys.argv) < 2):
-    print "usage: <stl file> (optional)<dat file>"
+    print("usage: <stl file> (optional)<dat file>")
     exit()
 
 if (len(sys.argv) == 3):
@@ -18,7 +18,7 @@ if (len(sys.argv) == 3):
 else:
     output_filename = os.path.splitext(sys.argv[1])[0] + ".dat"
 
-mm_to_ldu = 0.4
+mm_to_ldu = 1.0/0.4
 
 with open(output_filename, "w") as fp_out:
     fp_out.write("0 " + output_filename + os.linesep)
@@ -37,5 +37,5 @@ with open(output_filename, "w") as fp_out:
                 triangle = ""
                 number_triangles += 1
 
-        print "Part contains", number_triangles, "triangles."
+        print("Part contains", number_triangles, "triangles.")
         
